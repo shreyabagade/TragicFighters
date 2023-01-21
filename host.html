@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host Webinar</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="" id="contactForm" autocomplete="off">
+            <h4>Host Webinar</h4>
+            <div class="alert">Your message sent</div>
+
+
+            <div class="input-section">
+                <label>First Name <span class="required-color">*</span></label>
+                <div class="inputBox">
+                  <input type="text" id="firstname" placeholder="Your first name" />
+              </div>
+                <span id="firstname-error" class="hide required-color error-message"
+                  >Invalid Input</span
+                >
+                <span id="empty-firstname" class="hide required-color error-message"
+                  >First Name Cannot Be Empty</span></div>
+                
+
+
+                  <div class="input-section">
+                    <label>Last Name <span class="required-color">*</span></label>
+                    <input
+                      type="text "
+                      placeholder="Enter Last Name"
+                      id="lastname"
+                      required
+                    />
+                    <span id="lastname-error" class="hide required-color error-message"
+                      >Invalid Input</span
+                    >
+                    <span id="emptylastname" class="hide required-color error-message">
+                      Last Name Cannot Be Empty
+                    </span>
+                  </div>
+          
+                  <div class="input-section">
+                    <label>Email <span class="required-color">*</span></label>
+                    <input type="email" placeholder="Enter Email" id="emailid" required />
+                    <span id="email-error" class="hide required-color error-message"
+                      >Invalid Email</span
+                    >
+                    <span id="empty-email" class="hide required-color error-message"
+                      >Email Cannot Be Empty</span
+                    >
+                  </div>
+          
+                  <div class="input-section">
+                    <label>Phone <span class="required-color">*</span></label>
+                    <input
+                      type="text"
+                      placeholder="Enter Phone Number"
+                      id="phone"
+                      required
+                    />
+                    <span id="phone-error" class="hide required-color error-message"
+                      >Phone Number Should Have 10 Digits</span
+                    >
+                    <span id="empty-phone" class="hide required-color error-message">
+                      Phone cannot be empty
+                    </span>
+                  </div>
+          
+                  <div class="input-section">
+                    <label>Location <span class="required-color">*</span></label>
+                    <input
+                      type="text"
+                      placeholder="State your location"
+                      id="location"
+                      required
+                    />
+                    <span id="location-error" class="hide required-color error-message">
+                     
+                    </span>
+                    <span id="empty-location" class="hide required-color error-message">
+                      location Cannot Be Empty
+                    </span>
+                  </div>
+          
+                  <div class="input-section">
+                    <label>Share a few details about your education qualification, your current source of employment and
+                        why you wish to conduct a webinar, what do you know about disaster management?
+                        You will receive a mail from us within 3 days after you submit your details here<span class="required-color">*</span></label>
+                    <input
+                      type="text"
+                      placeholder="We will reach out to you for interview within 3 days"
+                      
+                      id="message"
+                      required
+                    />
+                    <span id="message-error" class="hide required-color error-message">
+                     
+                    </span>
+                    <span id="empty-message" class="hide required-color error"></span>
+                  </div>
+                  <button id="submit-button">Submit</button>
+                 
+                </form>
+              </div>
+             
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./host.js"></script>
+    <script src="./fire2.js"></script>
+</body>
+
+</html>
